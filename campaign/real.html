@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <title>Emerald | campaign</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/logo.png">
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+  <script>var config = {apiKey: "x",authDomain: "ascii-mission.firebaseapp.com",databaseURL: "https://ascii-mission.firebaseio.com",projectId: "ascii-mission",storageBucket: "ascii-mission.appspot.com",messagingSenderId: "x"};firebase.initializeApp(config);</script>
+  <script src="../libraries/www.js"></script>
+  <script src="../libraries/ascii.js"></script>
+  <script src="scripts/creatortools.js"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+ body {
+   background-color: black;
+   padding: 0px;
+   margin: 0px;
+ }
+ .media {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+ .divider {
+   width: 1px;
+   height: 200px;
+   display: inline-block;
+   background-color: green;
+   border: 1px solid green;
+ }
+ .container {
+   text-align: center;
+   padding: 5vw;
+ }
+ #msg {
+   color: green;
+   text-align: center;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 17pt;
+   text-decoration: none;
+ }
+ #begin {
+   color: green;
+   text-align: center;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 25pt;
+   text-decoration: none;
+ }
+ #begin:hover {
+   animation: colorshift 1s infinite;
+ }
+ #msg:hover {
+   animation: colorshift 1s infinite;
+ }
+ @keyframes colorshift {
+   to {
+     color: green;
+   }
+   from {
+     color: white;
+   }
+ }
+ @keyframes appear {
+   to {
+     color: red;
+   }
+   from {
+     color: green;
+   }
+ }
+</style>
+<body>
+  <div class="media">
+    <table><tr><td class="container">
+      <a id="msg" href="javascript:(function(){interpret();})()">continue with password</a><br><br>
+      <div id="password-container"></div>
+      <div id="err-container"></div>
+    </td><td class="container">
+      <hr class="divider">
+    </td><td class="container">
+      <a id="begin" href="javascript:(function(){gotoFirst();})()">begin a new journey&hellip;</a>
+    </td></tr></table>
+</body>
+<script src="../assets/passwords.js"></script>
+<script src="scripts/test.js"></script>
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+  <title>Emerald | about</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/logo.png">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+ body {
+   background-color: black;
+   padding: 0px;
+   margin: 0px;
+ }
+ li {
+   color: green;
+ }
+ .media {
+   position: absolute;
+ }
+ .left-column {
+   position: fixed;
+   top: 0;
+ }
+ .page-title {
+   max-width: 55vw;
+   font-size: 7.5vw;
+   padding: 30px;
+   margin: 0px;
+   color: green;
+   font-family: 'Press Start 2P', cursive;
+ }
+ .nav-list {
+   padding: 20px;
+   background-color: #bbb;
+   width: 25vw;
+ }
+ a {
+   font-size: 1vw;
+   color: green;
+   font-family: 'Press Start 2P', cursive;
+ }
+ .about-document {
+
+ }
+ .about-document > h1 {
+   font-size: 3vw;
+   color: green;
+   font-family: 'Press Start 2P', cursive;
+   text-decoration: underline;
+ }
+ .about-document > h2 {
+   font-size: 2vw;
+   color: green;
+   font-family: 'Press Start 2P', cursive;
+ }
+ .about-document > p {
+   font-size: 1vw;
+   color: green;
+   font-family: 'Press Start 2P', cursive;
+   line-height: 1.5;
+   text-indent: 10%;
+   margin-right: 50px;
+ }
+ .modelCell {
+   color: green;
+   font-family: 'Press Start 2P', cursive;
+   width: 10px;
+ }
+</style>
+<body>
+  <table><tr><td style="vertical-align:top;width:45vw;">
+    <div class="left-column">
+      <table><tr><td>
+        <h1 class="page-title">About</h1>
+      </td></tr><tr><td style="padding:5vh;">
+        <div class="nav-list">
+          <ul>
+            <li>
+              <a href="#welcome">Welcome</a>
+            </li>
+            <li>
+              <a href="#gameplay">Gameplay</a>
+              <ul>
+                <li>
+                  <a href="#controls">Controls</a>
+                </li>
+                <li>
+                  <a href="#mission">Mission</a>
+                </li>
+                <li>
+                  <a href="#passwords">Passwords</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#maker">Maker</a>
+              <ul>
+                <li>
+                  <a href="#model-creator">Model Creator</a>
+                </li>
+                <li>
+                  <a href="#maker-tools">Maker Tools</a>
+                </li>
+                <li>
+                  <a href="#authentication">Authentication</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#ascii">The ASCII Style</a>
+              <ul>
+                <li>
+                  <a href="#why-ascii">What is ASCII Art?</a>
+                </li>
+                <li>
+                  <a href="#what-ascii">Why ASCII Art?</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#devotions">Devotions</a>
+            </li>
+            <li>
+              <a href="#references">References</a>
+            </li>
+          </ul>
+        </div>
+      </td></tr></table>
+    </div>
+  </td><td style="vertical-align:top;">
+    <div class="about-document">
+      <h1 id="welcome">Welcome</h1>
+      <p>Welcome to Emerald. You are about to enter a world of fantastical wonders in a world never-before-seen to the naked eye.</p>
+      <h1 id="gameplay">Gameplay</h1>
+      <h2 id="controls">Controls</h2>
+      <p>When playing or playtesting a level, the player must control their character by using the arrow keys on the bottom right of your keyboard. You also have the option of using other keys: W = up, A = left, D = right.</p>
+      <p>The character will jump when an upwards-implied key is pressed. The character will move to the right when a rightwards-implied key is held and vice-versa with a leftwards-implied key is held.</p>
+      <h2 id="mission">Mission</h2>
+      <p>Your goal is to reach the Goalpost of your level. In every level, there is a Goalpost depicted in the style of ASCII art.</p>
+      <table class="screenTable"><tbody><tr><td class="modelCell">|</td><td class="modelCell">\</td><td class="modelCell">&nbsp;</td><td class="modelCell">&nbsp;</td></tr><tr><td class="modelCell">|</td><td class="modelCell">X</td><td class="modelCell">\</td><td class="modelCell">&nbsp;</td></tr><tr><td class="modelCell">|</td><td class="modelCell">_</td><td class="modelCell">_</td><td class="modelCell">\</td></tr><tr><td class="modelCell">|</td><td class="modelCell">&nbsp;</td><td class="modelCell">&nbsp;</td><td class="modelCell">&nbsp;</td></tr></tbody></table>
+      <h2 id="passwords">Passwords</h2>
+      <p>In the campaign, you may need to leave the site or take a break after a while. A password system has been implemented so you can continue from the state they've left off from.</p>
+      <p>The password is in the form of a 3x3 ASCII art illustration and is only shown after beating a level in the campaign. In order to secure your progress, it is suggested that you write it down or save it on a digital stickynote by creating an account with another EthanThatOneKid webapp called <a href="http://stickies.ethandavidson.com/" target="_blank">Stickes</a>.</p>
+      <h1 id="maker">Maker</h1>
+      <p>There exists a subsection within Emerald called <em>Maker</em>. There are various tools for making ASCII-styled platformer levels from scratch in the maker. These tools will be further elaborated on below.</p>
+      <h2 id="model-creator">Model Creator</h2>
+      <p>In the <em>Maker</em> subsection of Emerald, there dwells a curious box on the left side of the tools section. This is the Model Creator. The Model Creator allows the user to create custom models for their levels. Two scrollable inputs control the dimensions of your model.</p>
+      <p>For practice, you can make a piece of ground for your character to stand on. First, go to the Model Creator in your blank level. Second, decrease the vertical scrollbar until there is one row. Third, fill that row with characters from your keyboard; preferebly one that resembles a solid object such as <em>#</em>. Finally, title your new model <em>ground</em> and then click <em>add to list</em>. Now, it is a usable model just like the others in your tools.</p>
+      <p>To edit an existing model, select it by clicking its title and make your changes in the model creator. This time when you click <em>add to list</em>, it will ask you if you would like to save over it. Agree, and you will have successfully edited your custom model.
+      <h2 id="maker-tools">Maker Tools</h2>
+      <p>If you wish to place a model into the game's world, select it by clicking its title and then click on a cell in the screen that you would like to place the model within. If you do not like the position that you have placed your model, you have to ability to undo your previous moves by clicking <em>UNDO</em> on the right side of the page in the green box.</p>
+      <h2 id="authentication">Authentication</h2>
+      <p>You may have noticed some required text fields in the maker that display various annoying error messages. This is to ensure that each player gets premium security on each level created. When you create a new level, it must have a unique title, unlike any other levels created prior. Also, a key(or password) must be created for that specific level in order to ensure that only you(or anyone who you choose to share your key with) has the ability to edit the level. It is suggested that you write it down or save it on a digital stickynote by creating an account with another EthanThatOneKid webapp called <a href="http://stickies.ethandavidson.com/" target="_blank">Stickes</a>.</p>
+      <p>It may also be in your interest to give your screen name in the field entitled <em>Creator of this Level</em> so that people can search for your levels by screen name in the <em>User-Created Levels</em> subsection of Emerald and also so you can get some recognition for creating cool levels.</p>
+      <h1 id="ascii">The ASCII Style</h1>
+      <h2 id="what-ascii">What is ASCII Art?</h2>
+      <p><a href="https://en.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a> is an acronym standing for <strong>A</strong>merican <strong>S</strong>tandard <strong>C</strong>ode for <strong>I</strong>nformation <strong>I</strong>nterchange. It is commonly pronounced as ASS-KEE.</p>
+      <h2 id="why-ascii">Why ASCII Art?</h2>
+      <p>[DEVELOPER TRANSMISSION] I chose to use ASCII art in a game like this because my first programming language was BASIC. In that language, I created countless programs with various ASCII art images.</p>
+      <p>I had always been curious, only having made static images with ASCII art, how it would look for it to move in response to a player's action. The idea had always been in the back of my mind and with my knowledge about using the web to produce games I finally decided to go full-scale on this type of project.</p>
+      <h1 id="devotions">Devotions</h1>
+      <p>[DEVELOPER TRANSMISSION] I devote this project and all of my effort to all of my friends and family.</p>
+      <h1 id="references">References</h1>
+      <p><ul>
+        <li><a href="https://dev.w3.org/html5/html-author/charref" target="_blank">HTML Entities</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/ASCII_art" target="_blank">ASCII Art on Wikipedia</a></li>
+        <li><a href="https://www.asciiart.eu/" target="_blank">ASCII Art Archive</a></li>
+        <li><a href="http://stickies.ethandavidson.com/" target="_blank">Stickies</a></li>
+        <li><a href="https://firebase.google.com/" target="_blank">Google Firebase</a></li>
+      </ul></p>
+    </div>
+  </td></tr></table>
+</body>
+</html>

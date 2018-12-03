@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <title>Emerald | browse</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/logo.png">
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+  <script>var config = {apiKey: "x",authDomain: "ascii-mission.firebaseapp.com",databaseURL: "https://ascii-mission.firebaseio.com",projectId: "ascii-mission",storageBucket: "ascii-mission.appspot.com",messagingSenderId: "x"};firebase.initializeApp(config);</script>
+  <script src="../libraries/www.js"></script>
+  <script src="../libraries/ascii.js"></script>
+  <script src="scripts/spotlight.js"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+ body {
+   background-color: black;
+   padding: 0px;
+   margin: 0px;
+ }
+ .media {
+   position: absolute;
+ }
+ .page-title {
+   max-width: 55vw;
+   font-size: 7.5vw;
+   padding: 30px;
+   margin: 0px;
+   color: green;
+   font-family: 'Press Start 2P', cursive;
+ }
+ .spotlight-title {
+   font-size: 5vw;
+   padding: 30px;
+   padding-bottom: 0px;
+   margin: 0px;
+   color: green;
+   font-family: 'Press Start 2P', cursive;
+ }
+ .spotlightTitle {
+   color: green;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 2vw;
+ }
+ .spotlightInfo {
+   color: green;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 0.75vw;
+ }
+ .divider {
+   width: 25vw;
+   height: 1px;
+   display: inline-block;
+   background-color: green;
+   border: 1px solid green;
+   margin: 0px;
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+ #search-level-result {
+   width: 100%;
+   height: 25vh;
+   overflow: scroll;
+ }
+
+ @keyframes appear {
+   to {
+     color: red;
+   }
+   from {
+     color: green;
+   }
+ }
+</style>
+<body>
+  <div class="media">
+    <table><tr><td>
+      <h1 class="page-title">Browse User-Created levels</h1>
+      <div style="background-color:#bbb;padding:10px;top:9%;left:65vw;position:absolute;width:15vw;min-height:25vh;">
+        <small style="color:green;font-family:'Press Start 2P',cursive;text-align:center;">search by title or creator</small><br>
+        <input type="text" onchange="searchLevels()" id="search-level-field" placeholder="e.g. Title, Creator, etc">
+        <div id="search-level-result-container"></div>
+      </div>
+    </td></tr><tr><td>
+      <hr class="divider">
+      <div>
+        <h1 class="spotlight-title">Spotlight:</h1>
+        <div id="spotlight-container"></div>
+      </div>
+    </td></tr></table>
+</body>
+<script src="scripts/test.js"></script>
+</html>

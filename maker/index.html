@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <title>Emerald | maker</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/logo.png">
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+  <script>var config = {apiKey: "x",authDomain: "ascii-mission.firebaseapp.com",databaseURL: "https://ascii-mission.firebaseio.com",projectId: "ascii-mission",storageBucket: "ascii-mission.appspot.com",messagingSenderId: "x"};firebase.initializeApp(config);</script>
+  <script src="../libraries/www.js"></script>
+  <script src="scripts/ascii.js"></script>
+  <script src="scripts/creatortools.js"></script>
+
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+ body {
+   background-color: black;
+ }
+ .screenCell {
+   padding: 0px;
+   color: green;
+   text-align: center;
+   border: 1px solid green;
+   font-family: 'Press Start 2P', cursive;
+ }
+ .screenCell:hover {
+   border: 1px solid #CF5BFF;
+   cursor: crosshair;
+ }
+ .screenTable {
+   border: 1px solid green;
+ }
+ .modelCell {
+   padding: 0px;
+   color: green;
+   text-align: center;
+   border: 1px solid green;
+   font-family: 'Press Start 2P', cursive;
+ }
+ .modelTitle {
+   color: green;
+   border: 1px dotted green;
+   text-align: center;
+   font-family: 'Press Start 2P', cursive;
+   cursor: pointer;
+ }
+ #screen-container {
+   width: 542px;
+   height: 362px;
+   overflow: scroll;
+ }
+ input[type=range][orient=vertical] {
+   writing-mode: bt-lr; /* IE */
+   -webkit-appearance: slider-vertical; /* WebKit */
+   transform: rotate(180deg);
+   width: 8px;
+   padding: 0 5px;
+ }
+</style>
+<body>
+  <h1 class="modelTitle">ASCII MAKER</h1>
+
+  <table align="center"><tr><td>
+  <div id="media-container">
+    <div id="screen-container"></div>
+  </div>
+  </td></tr></table>
+  <br><br><br><br>
+
+  <h1 class="modelTitle">TOOLS</h1>
+  <table align="center" style="padding-bottom:200px;"><tr><td>
+  <div id="model-creator-container"></div>
+  </td><td align="center">
+  <div id="model-list"></div>
+  </td><td>
+  <div style="background-color:green;padding:20px;">
+    <input type="text" placeholder="Title of this Level" onchange="grabTitle()" id="level-title-input"><br>
+    <input type="text" placeholder="Creator of this Level" id="creator-input"><br>
+    <input type="text" placeholder="Password for this Level" id="password-input"><br>
+    <div id="error-msg-container"></div>
+    <a style="color:white;" href="javascript:playTest()">&raquo;PLAYTEST&raquo;</a><br>
+    <a style="color:white;" href="javascript:uploadLevelToFirebase()">&raquo;SAVE&raquo;</a><br>
+    <a style="color:white;" href="javascript:undo()">&raquo;UNDO&raquo;</a><br><br>
+    <input type="text" onchange="(function(){loadLevelByTitleName();})()" placeholder="Load level by title" id="level-input">
+  </div>
+  </td></tr></table>
+</body>
+<script src="scripts/test.js"></script>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <title>Emerald | coming soon</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+ body {
+   background-color: black;
+   padding:0px;
+   margin:0px;
+ }
+ .title {
+   color: green;
+   text-align: center;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 22.5vh;
+   animation: glitch .35s  cubic-bezier(.25, .46, .45, .94) both infinite;
+ }
+ .coming {
+   color: green;
+   text-align: center;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 17vh;
+   animation: glitch .35s  cubic-bezier(.95, .45, .46, .25) both infinite;
+ }
+ .button {
+   color: green;
+   text-align: center;
+   font-family: 'Press Start 2P', cursive;
+   font-size: 7vh; //25pt;
+   padding: 0.01vh; //10px;
+   border: solid 1px green;
+   text-decoration: none;
+ }
+ .button:hover {
+   animation: colorshift 1s infinite;
+ }
+ .foot {
+   background-color: #ddd;
+   bottom: 0px;
+   position: fixed;
+   width: 100%;
+   text-align: right;
+ }
+ @keyframes colorshift {
+   to {
+     color: green;
+   }
+   from {
+     color: white;
+   }
+ }
+ @keyframes glitch {
+   0% {
+     transform: translate(0);
+   }
+   20% {
+     transform: translate(1px, 1px);
+   }
+   40% {
+     transform: translate(-4px, 2px);
+   }
+   60% {
+     transform: translate(1px, 3px);
+   }
+   80% {
+     transform: translate(2px, -1px);
+   }
+   to {
+     transform: translate(0);
+   }
+ }
+</style>
+<body>
+  <table align="center">
+    <tr><td>
+      <h1 class="title">Emerald</h1>
+    </td></tr>
+    <tr><td align="center">
+      <h1 class="coming">coming soon</h1>
+    </td></tr>
+  </table>
+
+  <footer class="foot">
+		<small>EthanThatOneKid &copy2018</small> |
+    <small>gmail: <a href='mailto:ethan.r.1avidson@gmail.com?Subject=Hello%2C%20EthanThatOneKid'>ethan.r.davidson@gmail.com</a></small> |
+		<small>home: <a href='http://ethandavidson.com'>ethandavidson.com</a></small> |
+		<small>&#10084;</small>
+  </footer>
+
+</body>
+</html>
